@@ -3,3 +3,5 @@
 <p><%= @pic.description %></p>
 
 <%= link_to 'Back', root_path %>
+<%= link_to 'Edit', edit_pic_path %>
+<%= link_to 'Delete', @pic, :method => :delete, :data => {:confirm => "You Sure?"} %>
